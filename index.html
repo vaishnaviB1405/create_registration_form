@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task3: Student Profile System</title>
+    </head>
+    <h1 class="title">Student Registration Form</h1>
+    <body>
+        <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*:</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" placeholder="Enter your Name" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>City:</label>
+                        <input type="text" placeholder="Enter your City" name="city" id="city">
+                    </div>
+                    <div>
+                        <label>Mobile No:</label>
+                        <input type="text" placeholder="Enter Mobile Number" name="mobile" id="mobile">
+                    </div>
+                    <div>
+                        <label>Email Id:</label>
+                        <input type="text" placeholder="Enter your mail id" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>Gender:</label>
+                        <input type="text" placeholder="Male/Female" name="gender" id="gender">
+                    </div>
+                    <div>
+                        <label>Course:</label>
+                        <input type="text" placeholder="Enter your Course" name="course" id="course">
+                    </div>
+
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="REGISTER">
+                    </div>
+
+                </form>
+            </td>
+            <td>
+                <table class="list" id="studentList">
+                    <thead>
+                        <h2>Student Details</h2>
+                        <tr>
+                            <th>Full Name </th>
+                            <th>City </th>
+                            <th>Mobile No </th>
+                            <th>Email Id </th>
+                            <th>Gender </th>
+                            <th>Course </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+    </body>
+</html>
